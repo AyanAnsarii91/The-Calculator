@@ -1,0 +1,96 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Heading */
+h1.text-center {
+    text-align: center;
+    color: #333;
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+/* Container */
+.container {
+    background-color: #ffffffdd;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    max-width: 90vw;
+}
+
+/* Input */
+.row input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.3rem;
+    border: 2px solid #222;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Row Layout */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+/* Button Styling */
+.button {
+    flex: 1 1 20%;
+    margin: 4px;
+    padding: 14px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    background: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.button:hover {
+    background: #007bff;
+    color: #fff;
+    transform: scale(1.04);
+}
+
+/* Responsive */
+@media screen and (max-width: 400px) {
+    .button {
+        flex: 1 1 45%;
+        padding: 10px 0;
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    h1.text-center {
+        font-size: 1.3rem;
+    }
+}
